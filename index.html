@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+</head>
+<body>
+    <section>
+        <div class="title">ДЗ №13. Введение в JavaScript.</div>
+    </section>
+    <section class="sum">
+        <h2>1. Задайте два числа и получите их сумму:</h2>
+        <div class="wrap">
+            <form action="#">
+                <div class="data">
+                    <div class="equation">
+                        <div class="input">
+                            <label for="sum_first" class="first_label">
+                                Первое слагаемое
+                            </label>
+                            <input id="sum_first" type="number" name="sum_first" placeholder="Введите число">
+                        </div>
+                        <div class="input">
+                            <label for="sum_second" class="second_label">
+                                Второе слагаемое
+                            </label>
+                            <input id="sum_second" type="number" name="sum_second" placeholder="Введите число">
+                        </div>
+                    </div>
+                    <button onclick="sum()">Сложить</button>
+                </div>
+            </form>
+            <div class="answer">
+                <span>Сумма</span>
+                <div id="result_sum"></div>
+            </div>
+        </div>
+    </section>
+    <section class="subtract">
+        <h2>2. Задайте два числа и получите их разность:</h2>
+        <div class="wrap">
+            <form action="#">
+                <div class="data">
+                    <div class="equation">
+                        <div class="input">
+                            <label for="subtract_first" class="first_label">
+                                Уменьшаемое
+                            </label>
+                            <input id="subtract_first" type="number" name="subtract_first" placeholder="Введите число">
+                        </div>
+                        <div class="input">
+                            <label for="subtract_second" class="second_label">
+                                Вычитемое
+                            </label>
+                            <input id="subtract_second" type="number" name="subtract_second" placeholder="Введите число">
+                        </div>
+                    </div>
+                    <button onclick="subtract()">Отнять</button>
+                </div>
+            </form>
+            <div class="answer">
+                <span>Разность</span>
+                <div id="result_subtract"></div>
+            </div>
+        </div>
+    </section>
+    <section class="average">
+        <h2>3. Задайте два числа и получите их среднее значение:</h2>
+        <div class="wrap">
+            <form action="#">
+                <div class="data">
+                    <div class="equation">
+                        <div class="input">
+                            <label for="average_first" class="first_label">
+                                Первое число
+                            </label>
+                            <input id="average_first" type="number" name="average_first" placeholder="Введите число">
+                        </div>
+                        <div class="input">
+                            <label for="average_second" class="second_label">
+                                Второе число
+                            </label>
+                            <input id="average_second" type="number" name="average_second" placeholder="Введите число">
+                        </div>
+                    </div>
+                    <button onclick="average()">Вычислить</button>
+                </div>
+            </form>
+            <div class="answer">
+                <span>Среднее</span>
+                <div id="result_average"></div>
+            </div>
+        </div>
+    </section>
+    <section class="average2">
+        <h2>4. Задайте два числа и получите среднее значение их квадратов:</h2>
+        <div class="wrap">
+            <form action="#">
+                <div class="data">
+                    <div class="equation">
+                        <div class="input">
+                            <label for="average2_first" class="first_label">
+                                Первое число
+                            </label>
+                            <input id="average2_first" type="number" name="average2_first" placeholder="Введите число">
+                        </div>
+                        <div class="input">
+                            <label for="average2_second" class="second_label">
+                                Второе число
+                            </label>
+                            <input id="average2_second" type="number" name="average2_second" placeholder="Введите число">
+                        </div>
+                    </div>
+                    <button onclick="average2()">Вычислить</button>
+                </div>
+            </form>
+            <div class="answer">
+                <span>Среднее квадратов</span>
+                <div id="result_average2"></div>
+            </div>
+        </div>
+    </section>
+    <section class="calculator">
+        <h2>5. Используйте в качестве калькулятора:</h2>
+        <div class="wrap">
+            <form action="#">
+                <div class="data">
+                    <div class="equation">
+                        <div class="input">
+                            <label for="calculator_first" class="first_label">
+                                Первое число
+                            </label>
+                            <input id="calculator_first" type="number" name="calculator_first" placeholder="Введите число">
+                        </div>
+                        <select name="operators" id="operators">
+                            <option>+</option>
+                            <option>-</option>
+                            <option>*</option>
+                            <option>/</option>
+                        </select>
+                        <div class="input">
+                            <label for="calculator_second" class="second_label">
+                                Второе число
+                            </label>
+                            <input id="calculator_second" type="number" name="calculator_second" placeholder="Введите число">
+                        </div>
+                    </div>
+                    <button onclick="calculator()">Вычислить</button>
+                </div>
+            </form>
+            <div class="answer">
+                <span>Результат</span>
+                <div id="result_calculator"></div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

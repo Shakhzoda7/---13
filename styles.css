@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+}
+
+section{
+    width: 1200px;
+    margin: 60px auto;
+    
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: blue;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #222222;
+    margin-bottom: 16px;
+}
+
+.equation{
+    display: flex;
+    column-gap: 30px;
+    align-items: end;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input{
+    padding: 14px 20px;
+    border-radius: 12px;
+    width: 220px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border: 1px solid #000;
+    
+}
+
+::placeholder{
+    color: #222;
+    opacity: 0.5;
+}
+
+label{
+    color: #222;
+    font-weight: 500;
+}
+
+.data{
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+button{
+    width: 262px;
+    background-color: blue;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+}
+
+.wrap{
+    display: flex;
+    gap: 40px;
+    align-items: flex-end;
+}
+
+#result_sum, #result_subtract, #result_average, #result_average2, #result_calculator{
+    border: 2px solid rgba(0, 128, 0, 0.7);
+    padding: 0px 20px;
+    width: 200px;
+    border-radius: 12px;
+    color: green;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+}
+
+.answer{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.answer span{
+    font-size: 16px;
+    color: rgba(0, 128, 0, 0.7);
+    font-weight: 600;
+}
+
+.btn{
+    display: flex;
+    gap: 23px;
+}
+
+.btn button{
+    width: 48px;
+    
+}
+
+select{
+    height: 48px;
+    width: 48px;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.calculator input{
+    width: 181px;
+}
